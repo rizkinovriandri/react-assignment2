@@ -1,23 +1,27 @@
 const SidebarItems = [
     {
-        name: "THE ITALIAN JOB",
-        route: '/'
+        name: "ABOUT",
+        route: '/about'
     },
     {
-        name: "Dashboard",
-        route: '/dashboard',
+        name: "EXPERIENCE",
+        route: '/experience',
     },
     {
-        name: "Page 1",
-        route: '/page-1'
+        name: "EDUCATION",
+        route: '/education'
     },
     {
-        name: "Page 2",
-        route: '/page-2'
+        name: "SKILLS",
+        route: '/skills'
     },
     {
-        name: "Page 3",
-        route: 'page-3'
+        name: "INTEREST",
+        route: '/interest'
+    },
+    {
+        name: "AWARDS",
+        route: '/awards'
     },
 ];
 

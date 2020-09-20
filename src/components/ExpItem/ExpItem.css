@@ -1,0 +1,18 @@
+.card-body{
+  text-align: left;
+}
+
+.cardHeader{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.expDate{
+  color: sandybrown;
+  font-weight: 500;
+}
+
+.card-text{
+  margin-bottom: 30px;
+}

@@ -1,7 +1,11 @@
 import React, {useEffect, useState} from "react";
 import styled from 'styled-components'
-import SidebarItems from "./SidebarItems";
 import {Link} from "react-router-dom";
+
+import SidebarItems from "./SidebarItems";
+import Avatar from "./Avatar/Avatar";
+
+
 
 function Sidebar(props, {defaultActive,}) {
     const location = props.history.location;
@@ -29,10 +33,14 @@ function Sidebar(props, {defaultActive,}) {
     return (
         <>
             <SidebarParent>
-                <div style={{position: 'fixed'}}>
+
+                <div style={{position: 'center'}}>
+                  <Avatar url="https://previews.dropbox.com/p/thumb/AA7fuM1kAA6Xo3tuM0R7XAdG7APg4U3D4VCt83Ylo41hX3P5uREDPxObd-xXPaqWTm_O4JKkqRQPM17Pw_Qxskggp9Ep2UWtfwLo4aEATs1LkCH17sEJ-G3X8RbeuboySvzoqluC1DrDJ5AvtW3Fh8yes7RzA2Lv5ju--i7LQL7sK5zMoOkpR9zrko5ESyGMw68PbTMgv_NQgiawdLjk9PLBk4DtR9z63CwmvBj89iz9BP1E-oXGOph4yEX0Eqw5fA1cIf0Qw5iH7ASZfeOvo0geftua1I94XVAVnAwE8OinSfxWQ20huGA24PpIM_CatLLQhxbzRU2MQnEd7r4G_5iB/p.jpeg?fv_content=true&size_mode=5"/>
                     {
                         SidebarItems.map((item, index)=> {
                             return (
+                                <>
+                                
                                 <Link to={item.route}>
                                     <SidebarItem key={item.name}
                                                  active={index === activeIndex}
@@ -40,12 +48,13 @@ function Sidebar(props, {defaultActive,}) {
                                         <p>{item.name}</p>
                                     </SidebarItem>
                                 </Link>
+                                </>
                             );
                         })
                     }
 
                 </div>
-                <div className="behind-the-scenes"/>
+                {/* <div className="behind-the-scenes"/> */}
             </SidebarParent>
         </>
     );
@@ -54,7 +63,11 @@ function Sidebar(props, {defaultActive,}) {
 export default Sidebar;
 
 const SidebarParent = styled.div`
-  background: #cf3d2a;
+  background: #7ac143;
+  padding: 70px 0;
+  margin: 0;
+  text-align: center;
+  
   
   a {
     text-decoration: none;
@@ -63,6 +76,7 @@ const SidebarParent = styled.div`
   & > div {
     width: 250px;
     height: 100vh;
+    
   }
   
   .behind-the-scenes {
@@ -74,7 +88,7 @@ const SidebarParent = styled.div`
 const SidebarItem = styled.div`
   padding: 16px 24px;
   transition: all 0.25s ease-in-out;
-  background: ${props => props.active ? "#b15b00" : ""};
+  background: ${props => props.active ? "#00a78e" : ""};
   margin: 4px 12px;
   border-radius: 4px;
 

@@ -1,0 +1,27 @@
+.content{
+  padding-left: 1%;
+  padding-top: 20px;
+  width: 95%;
+}
+
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.containerSkill {
+  width: 80%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.gaming {width: 90%; background-color: #e4002b;} /* Green */
+.coding {width: 80%; background-color: #efdf00;} /* Blue */
+.procurement {width: 65%; background-color: #84bd00;} /* Red */
+.nap {width: 60%; background-color: #fe5000;} /* Dark Grey */

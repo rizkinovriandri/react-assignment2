@@ -1,0 +1,75 @@
+.title{
+  margin-top: 15px;
+  justify-content: center;
+  display: flex;
+}
+
+#profilePic{
+  width: 250px;
+}
+
+.content_about{
+  padding-left: 20px;
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  
+  padding: 10px;
+
+}
+
+.title #ipsum{
+  color: brown;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title #lorem{
+  color: black;
+  font-size: 60px;
+  margin-right: 0px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contact{
+  text-align: left;
+  width: 60%;
+  display: flex;
+  font-size: 30px;
+}
+
+.contact #phone{
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact #email{
+  color: brown;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.desc{
+  text-align: justify;
+}
+
+.social{
+  /* text-align: left; */
+}
+
+.card-body{
+
+  /* text-align: center !important; */
+}
+
+.card{
+  margin-top: 8%;
+}
+
+.tagline{
+  color: #84bd00;  
+  font-family: 'Caveat';
+  font-size: 25px;
+}
